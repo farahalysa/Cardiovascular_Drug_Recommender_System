@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CVD Drug Recommender System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/drug.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/img/logo.png" alt=""> -->
+        <h1>Cardiovascular Drug Recommender System</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Find the TOP 7 drug that you need!</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Here you can find recommendations for the top 7 alternative/substitute cardiovascular medicines with similar uses or indications from MIMS Website</p>
+
+          <form action="/recommendation" method="post" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200" style="padding: 9px;" name="form">
+            <select type="text" class="form-select" id="drugs" name="drugs" aria-label="Default select example" required="">
+              <option value="" disabled selected>Select the drug's brand here</option>
+              <option value="Aprixa">Aprixa</option>
+              <option value="Artepid">Artepid</option>
+              <option value="Aspilets">Aspilets</option>
+              <option value="Atofar">Atofar</option>
+              <option value="Atofit">Atofit</option>
+              <option value="Betaloc Zok">Betaloc Zok</option>
+              <option value="Bioprexum">Bioprexum</option>
+              <option value="Bioprexum Plus">Bioprexum Plus</option>
+              <option value="Bipro">Bipro</option>
+              <option value="Biscor">Biscor</option>
+              <option value="Blopress">Blopress</option>
+              <option value="Blopress Plus">Blopress Plus</option>
+              <option value="Blorec">Blorec</option>
+              <option value="Caduet">Caduet</option>
+              <option value="Canderin">Canderin</option>
+              <option value="Candetens">Candetens</option>
+              <option value="Carduo">Carduo</option>
+              <option value="Cardura">Cardura</option>
+              <option value="Carpiaton-25/Carpiaton-100">Carpiaton-25/Carpiaton-100</option>
+              <option value="Carvilol">Carvilol</option>
+              <option value="Cedocard">Cedocard</option>
+              <option value="Cedocard Retard">Cedocard Retard</option>
+              <option value="Cholespar">Cholespar</option>
+              <option value="Cholestor">Cholestor</option>
+              <option value="Cholvastin">Cholvastin</option>
+              <option value="Clogin">Clogin</option>
+              <option value="Concor">Concor</option>
+              <option value="Coralan">Coralan</option>
+              <option value="Cordila SR">Cordila SR</option>
+              <option value="Coveram">Coveram</option>
+              <option value="Crestor">Crestor</option>
+              <option value="Diovan">Diovan</option>
+              <option value="Eliquis">Eliquis</option>
+              <option value="Esvat">Esvat</option>
+              <option value="Exforge">Exforge</option>
+              <option value="Ezetrol">Ezetrol</option>
+              <option value="Fargoxin">Fargoxin</option>
+              <option value="Farmabes">Farmabes</option>
+              <option value="Farmadral">Farmadral</option>
+              <option value="Farmasal">Farmasal</option>
+              <option value="Farnormin">Farnormin</option>
+              <option value="Farsix">Farsix</option>
+              <option value="Farsorbid 5/Farsorbid 10/Farsorbid Injection">Farsorbid 5/Farsorbid 10/Farsorbid Injection</option>
+              <option value="Fenolip">Fenolip</option>
+              <option value="Fenopi">Fenopi</option>
+              <option value="Gionix">Gionix</option>
+              <option value="Gratigo">Gratigo</option>
+              <option value="Gratizin">Gratizin</option>
+              <option value="Hapsen">Hapsen</option>
+              <option value="Hyperchol">Hyperchol</option>
+              <option value="Hypofil">Hypofil</option>
+              <option value="Internolol">Internolol</option>
+              <option value="Irbeten">Irbeten</option>
+              <option value="Irtan">Irtan</option>
+              <option value="Irtan Plus">Irtan Plus</option>
+              <option value="Isoptin/Isoptin SR">Isoptin/Isoptin SR</option>
+              <option value="Isorbid">Isorbid</option>
+              <option value="Justin">Justin</option>
+              <option value="Kendaron">Kendaron</option>
+              <option value="Lapiva">Lapiva</option>
+              <option value="Lipanthyl/Lipanthyl Penta 145/Lipanthyl Supra 160">Lipanthyl/Lipanthyl Penta 145/Lipanthyl Supra 160</option>
+              <option value="Lipidef">Lipidef</option>
+              <option value="Lipitor">Lipitor</option>
+              <option value="Lixiana">Lixiana</option>
+              <option value="Lodoz">Lodoz</option>
+              <option value="Losatec">Losatec</option>
+              <option value="Lotensi">Lotensi</option>
+              <option value="Lotyn">Lotyn</option>
+              <option value="Micardis">Micardis</option>
+              <option value="Micardis Plus">Micardis Plus</option>
+              <option value="Miniaspi 80">Miniaspi 80</option>
+              <option value="Natrilix SR">Natrilix SR</option>
+              <option value="Nebilet">Nebilet</option>
+              <option value="Nevodio">Nevodio</option>
+              <option value="Nifedin">Nifedin</option>
+              <option value="Nitrokaf Retard/Nitrokaf Retard Forte">Nitrokaf Retard/Nitrokaf Retard Forte</option>
+              <option value="Norvask">Norvask</option>
+              <option value="Odace">Odace</option>
+              <option value="Olmetec">Olmetec</option>
+              <option value="Olmetec Plus">Olmetec Plus</option>
+              <option value="Opiprol">Opiprol</option>
+              <option value="Opsumit">Opsumit</option>
+              <option value="Orvast">Orvast</option>
+              <option value="Pidovix">Pidovix</option>
+              <option value="Pladogrel">Pladogrel</option>
+              <option value="Platof">Platof</option>
+              <option value="Platogrix">Platogrix</option>
+              <option value="Plavix">Plavix</option>
+              <option value="Pletaal">Pletaal</option>
+              <option value="Pletaal SR">Pletaal SR</option>
+              <option value="Pradaxa">Pradaxa</option>
+              <option value="Pravinat">Pravinat</option>
+              <option value="Profibrat">Profibrat</option>
+              <option value="Ranexa">Ranexa</option>
+              <option value="Revatio">Revatio</option>
+              <option value="Rinclo">Rinclo</option>
+              <option value="Roswin">Roswin</option>
+              <option value="Rovascol">Rovascol</option>
+              <option value="Rovastar">Rovastar</option>
+              <option value="Rozact">Rozact</option>
+              <option value="Samsca">Samsca</option>
+              <option value="Selvim">Selvim</option>
+              <option value="Sequest">Sequest</option>
+              <option value="Seremig">Seremig</option>
+              <option value="Sibelium-5/Sibelium-10">Sibelium-5/Sibelium-10</option>
+              <option value="Silum">Silum</option>
+              <option value="Simarc-2">Simarc-2</option>
+              <option value="Simbado">Simbado</option>
+              <option value="Simciti">Simciti</option>
+              <option value="Simclovix">Simclovix</option>
+              <option value="Simrovas">Simrovas</option>
+              <option value="Simtel">Simtel</option>
+              <option value="Simtor">Simtor</option>
+              <option value="Stator">Stator</option>
+              <option value="Stavinor">Stavinor</option>
+              <option value="Tensicap">Tensicap</option>
+              <option value="Tensinop">Tensinop</option>
+              <option value="Therodel">Therodel</option>
+              <option value="Tiaryt">Tiaryt</option>
+              <option value="Ticuring">Ticuring</option>
+              <option value="Trilipix">Trilipix</option>
+              <option value="Trolip">Trolip</option>
+              <option value="Twynsta">Twynsta</option>
+              <option value="Uperio">Uperio</option>
+              <option value="Uresix">Uresix</option>
+              <option value="Vaclo">Vaclo</option>
+              <option value="Vardipin">Vardipin</option>
+              <option value="Vitor">Vitor</option>
+              <option value="Vytorin">Vytorin</option>
+              <option value="Zanidip">Zanidip</option>
+              <option value="">
+              </option>
+
+            </select><br>
+            <button type="submit" class="btn btn-primary" value="submit">Show Recommendation</button>
+          </form>
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="130" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Drugs</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <p>MIMS Class</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
+                <p>ATC Classification</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="static/img/drugs.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-7 col-md-12 footer-info">
+          <a href="https://docs.google.com/spreadsheets/d/1ZS3reVGkUKekjudAVpWgCSHozK7dKo4UhU4gJcGo_KY/edit?usp=sharing" target="_blank" class="logo d-flex align-items-center">
+            <span>Click here to see the drugs list!</span>
+          </a>
+        </div>
+      </div>
+    </div><br><br>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        <span>- Tugas Akhir Jurusan Statistika -</span>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Created by <strong><span>Farah Alysa Putri</span></strong>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+  
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
