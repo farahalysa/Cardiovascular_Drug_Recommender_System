@@ -63,28 +63,41 @@
     <div class="container">
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Find the TOP 7 drug that you need!</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Here you can find recommendations for the top 7 alternative/substitute cardiovascular medicines with similar uses or indications from MIMS Website</p>
+          <h2 data-aos="fade-up">Find the TOP-N drug that you need!</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Here you can find recommendations for the top-n alternative/substitute cardiovascular medicines with similar uses or indications from MIMS Website</p>
 
           <form action="/recommendation" method="post" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200" style="padding: 9px;" name="form">
             <select type="text" class="form-select" id="drugs" name="drugs" aria-label="Default select example" required="">
               <option value="" disabled selected>Select the drug's brand here</option>
+              <option value="A-B Vask">A-B Vask</option>
+              <option value="Actilyse">Actilyse</option>
               <option value="Aprixa">Aprixa</option>
+              <option value="Ardium 1000">Ardium 1000</option>
+              <option value="Ardium 500">Ardium 500</option>
+              <option value="Arespin">Arespin</option>
               <option value="Artepid">Artepid</option>
               <option value="Aspilets">Aspilets</option>
               <option value="Atofar">Atofar</option>
               <option value="Atofit">Atofit</option>
+              <option value="Atozet">Atozet</option>
               <option value="Betaloc Zok">Betaloc Zok</option>
               <option value="Bioprexum">Bioprexum</option>
               <option value="Bioprexum Plus">Bioprexum Plus</option>
               <option value="Bipro">Bipro</option>
               <option value="Biscor">Biscor</option>
+              <option value="Blistra">Blistra</option>
               <option value="Blopress">Blopress</option>
               <option value="Blopress Plus">Blopress Plus</option>
               <option value="Blorec">Blorec</option>
+              <option value="Briclot">Briclot</option>
+              <option value="Brilinta">Brilinta</option>
+              <option value="Bufacardo">Bufacardo</option>
               <option value="Caduet">Caduet</option>
+              <option value="Calsivas">Calsivas</option>
+              <option value="Candefar">Candefar</option>
               <option value="Canderin">Canderin</option>
               <option value="Candetens">Candetens</option>
+              <option value="Cardiotone">Cardiotone</option>
               <option value="Carduo">Carduo</option>
               <option value="Cardura">Cardura</option>
               <option value="Carpiaton-25/Carpiaton-100">Carpiaton-25/Carpiaton-100</option>
@@ -96,15 +109,25 @@
               <option value="Cholvastin">Cholvastin</option>
               <option value="Clogin">Clogin</option>
               <option value="Concor">Concor</option>
+              <option value="Concor AM">Concor AM</option>
               <option value="Coralan">Coralan</option>
               <option value="Cordila SR">Cordila SR</option>
+              <option value="Cosyrel">Cosyrel</option>
               <option value="Coveram">Coveram</option>
               <option value="Crestor">Crestor</option>
+              <option value="Dilavask">Dilavask</option>
+              <option value="Diltiasan">Diltiasan</option>
               <option value="Diovan">Diovan</option>
+              <option value="Dipitenz">Dipitenz</option>
+              <option value="Diviti">Diviti</option>
+              <option value="Dobuject">Dobuject</option>
+              <option value="Duvadilan">Duvadilan</option>
               <option value="Eliquis">Eliquis</option>
+              <option value="Epivas">Epivas</option>
               <option value="Esvat">Esvat</option>
               <option value="Exforge">Exforge</option>
               <option value="Ezetrol">Ezetrol</option>
+              <option value="Fapresor">Fapresor</option>
               <option value="Fargoxin">Fargoxin</option>
               <option value="Farmabes">Farmabes</option>
               <option value="Farmadral">Farmadral</option>
@@ -112,15 +135,26 @@
               <option value="Farnormin">Farnormin</option>
               <option value="Farsix">Farsix</option>
               <option value="Farsorbid 5/Farsorbid 10/Farsorbid Injection">Farsorbid 5/Farsorbid 10/Farsorbid Injection</option>
+              <option value="Fastor">Fastor</option>
               <option value="Fenolip">Fenolip</option>
               <option value="Fenopi">Fenopi</option>
+              <option value="Fibrion">Fibrion</option>
               <option value="Gionix">Gionix</option>
+              <option value="Gracivask">Gracivask</option>
+              <option value="Gralin">Gralin</option>
               <option value="Gratigo">Gratigo</option>
               <option value="Gratizin">Gratizin</option>
               <option value="Hapsen">Hapsen</option>
+              <option value="Hepagusan">Hepagusan</option>
               <option value="Hyperchol">Hyperchol</option>
               <option value="Hypofil">Hypofil</option>
+              <option value="Hytroz">Hytroz</option>
+              <option value="Indop">Indop</option>
+              <option value="Inotrop">Inotrop</option>
+              <option value="Inovad">Inovad</option>
               <option value="Internolol">Internolol</option>
+              <option value="Intervask">Intervask</option>
+              <option value="Inviclot">Inviclot</option>
               <option value="Irbeten">Irbeten</option>
               <option value="Irtan">Irtan</option>
               <option value="Irtan Plus">Irtan Plus</option>
@@ -128,7 +162,11 @@
               <option value="Isorbid">Isorbid</option>
               <option value="Justin">Justin</option>
               <option value="Kendaron">Kendaron</option>
+              <option value="Konblobet">Konblobet</option>
+              <option value="Konipid">Konipid</option>
+              <option value="Lapibroz">Lapibroz</option>
               <option value="Lapiva">Lapiva</option>
+              <option value="Licodipin">Licodipin</option>
               <option value="Lipanthyl/Lipanthyl Penta 145/Lipanthyl Supra 160">Lipanthyl/Lipanthyl Penta 145/Lipanthyl Supra 160</option>
               <option value="Lipidef">Lipidef</option>
               <option value="Lipitor">Lipitor</option>
@@ -137,19 +175,25 @@
               <option value="Losatec">Losatec</option>
               <option value="Lotensi">Lotensi</option>
               <option value="Lotyn">Lotyn</option>
+              <option value="Lovenox">Lovenox</option>
               <option value="Micardis">Micardis</option>
               <option value="Micardis Plus">Micardis Plus</option>
               <option value="Miniaspi 80">Miniaspi 80</option>
+              <option value="Miozidine MR">Miozidine MR</option>
+              <option value="Monecto-20">Monecto-20</option>
+              <option value="Natexam">Natexam</option>
               <option value="Natrilix SR">Natrilix SR</option>
               <option value="Nebilet">Nebilet</option>
               <option value="Nevodio">Nevodio</option>
               <option value="Nifedin">Nifedin</option>
               <option value="Nitrokaf Retard/Nitrokaf Retard Forte">Nitrokaf Retard/Nitrokaf Retard Forte</option>
+              <option value="Normetec">Normetec</option>
               <option value="Norvask">Norvask</option>
               <option value="Odace">Odace</option>
               <option value="Olmetec">Olmetec</option>
               <option value="Olmetec Plus">Olmetec Plus</option>
               <option value="Opiprol">Opiprol</option>
+              <option value="Opivask">Opivask</option>
               <option value="Opsumit">Opsumit</option>
               <option value="Orvast">Orvast</option>
               <option value="Pidovix">Pidovix</option>
@@ -161,15 +205,21 @@
               <option value="Pletaal SR">Pletaal SR</option>
               <option value="Pradaxa">Pradaxa</option>
               <option value="Pravinat">Pravinat</option>
+              <option value="Praxilene">Praxilene</option>
               <option value="Profibrat">Profibrat</option>
+              <option value="Proxime">Proxime</option>
+              <option value="Raivas">Raivas</option>
               <option value="Ranexa">Ranexa</option>
               <option value="Revatio">Revatio</option>
+              <option value="Revatio POS">Revatio POS</option>
               <option value="Rinclo">Rinclo</option>
+              <option value="Rostin">Rostin</option>
               <option value="Roswin">Roswin</option>
               <option value="Rovascol">Rovascol</option>
               <option value="Rovastar">Rovastar</option>
               <option value="Rozact">Rozact</option>
               <option value="Samsca">Samsca</option>
+              <option value="Santesar">Santesar</option>
               <option value="Selvim">Selvim</option>
               <option value="Sequest">Sequest</option>
               <option value="Seremig">Seremig</option>
@@ -179,27 +229,39 @@
               <option value="Simbado">Simbado</option>
               <option value="Simciti">Simciti</option>
               <option value="Simclovix">Simclovix</option>
+              <option value="Simduva">Simduva</option>
               <option value="Simrovas">Simrovas</option>
               <option value="Simtel">Simtel</option>
               <option value="Simtor">Simtor</option>
+              <option value="Simvask-5/Simvask-10">Simvask-5/Simvask-10</option>
               <option value="Stator">Stator</option>
               <option value="Stavinor">Stavinor</option>
               <option value="Tensicap">Tensicap</option>
               <option value="Tensinop">Tensinop</option>
+              <option value="Tensivask">Tensivask</option>
+              <option value="Theravask">Theravask</option>
               <option value="Therodel">Therodel</option>
+              <option value="Thrombo Aspilets">Thrombo Aspilets</option>
               <option value="Tiaryt">Tiaryt</option>
+              <option value="Tiaryt Injection">Tiaryt Injection</option>
               <option value="Ticuring">Ticuring</option>
               <option value="Trilipix">Trilipix</option>
+              <option value="Trizedon MR">Trizedon MR</option>
+              <option value="Trizedon OD">Trizedon OD</option>
               <option value="Trolip">Trolip</option>
               <option value="Twynsta">Twynsta</option>
               <option value="Uperio">Uperio</option>
               <option value="Uresix">Uresix</option>
               <option value="Vaclo">Vaclo</option>
+              <option value="Valemia">Valemia</option>
               <option value="Vardipin">Vardipin</option>
+              <option value="Vascon">Vascon</option>
+              <option value="Venodenol">Venodenol</option>
+              <option value="Venosmil">Venosmil</option>
               <option value="Vitor">Vitor</option>
               <option value="Vytorin">Vytorin</option>
               <option value="Zanidip">Zanidip</option>
-              <option value="">
+              <option value="Zevask">Zevask</option>
               </option>
 
             </select><br>
@@ -210,7 +272,7 @@
 
             <div class="col-lg-3 col-6">
               <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="130" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="179" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Drugs</p>
               </div>
             </div><!-- End Stats Item -->
