@@ -1,2 +1,13 @@
-# Recommendation System with Content-Based Filtering Method in Cardiovascular Disease’s Drugs
-Cardiovascular disease is a group of heart and blood vessel disorders which are the leading cause of death globally. In Indonesia, about one third of all deaths are caused by cardiovascular disease. Prevention of premature death can be achieved by identifying patients who are at high risk of developing cardiovascular disease and ensuring they get the right medication. In prescribing drugs, it is not uncommon for doctors or pharmacists to change prescription drugs when patients cannot take certain drugs due to allergies, side effects that cannot be tolerated, or when drug stocks run out. Therefore a cardiovascular drug recommender system is needed to provide relevant replacement drug recommendations. The analytical method used in this study is a recommender system with a content-based filtering method. Similarity between drugs is measured based on the similarity measure using cosine similarity. The data used in this project is sourced from the MIMS website https://www.mims.com/indonesia/drug
+# Cardiovascular Drug Recommender System
+
+Cardiovascular disease is a group of heart and blood vessel disorders that constitute the leading cause of death globally. In Indonesia, approximately one third of all deaths are attributed to cardiovascular disease. Premature death prevention can be achieved by identifying high-risk patients and ensuring they receive appropriate medication.
+
+In medical practice, it's common for doctors or pharmacists to alter prescriptions due to allergies, intolerable side effects, or drug shortages. Thus, a cardiovascular drug recommender system becomes crucial for providing relevant replacement drug recommendations.
+
+## Methodology
+
+This project employs a *recommender system* with a **content-based filtering** method. Drug similarity is measured using **cosine similarity**. The data utilized is sourced from the [MIMS website](https://www.mims.com/indonesia/drug).
+
+## Implementation
+
+The developed recommendation system has been implemented on a website, accessible [here](https://cvdsdrugrecommendersystem.pythonanywhere.com/). Feel free to explore and use the system to get personalized drug recommendations.
